@@ -24,4 +24,25 @@ npm i react react-dom @types/react @types/react-dom --dev
 npm i prop-types
 ```
 
+# 开发与调试
+## docz预览
+```
+npm i docz --dev
+npm i rimraf --dev //清空目录的一个辅助库
+npm i less gatsby-plugin-less --dev
+```
+
+# 组件库打包
+## 导出类型文件声明
+```
+build:types: tsc -p tsconfig.build.json && cpr lib esm,
+```
+
+## 导出 Commonjs 模块
+安装babel
+```
+npm i @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-class-properties  @babel/plugin-transform-runtime --dev
+npm i @babel/runtime-corejs3
+```
+
 参考链接:https://segmentfault.com/a/1190000022650381
